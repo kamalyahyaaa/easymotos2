@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
    
 
 }
@@ -20,16 +21,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
+    padding: 20px 3%;
     background-color: #222830;
     width: 100%;
-    
-    
 }
 
 .logo{
     cursor: pointer;
-    
 
 }
 .nav-links{
@@ -45,7 +43,7 @@ header{
 .nav-links li a:hover{
    color:#04BD70;
 }
-button{
+.btn1{
     padding: 9px 25px;
     background-color: #04BD70;
     border: none;
@@ -54,22 +52,146 @@ button{
     transition: all 0.3s ease 0s;  
     
 }
-button:hover{
+.btn1:hover{
     background-color: #323b47;
     
 }
-.main1{
+/* navstyle end */
+.parent{
     background-color: #222830;
-    height: 640px;
+    height: auto;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
-.pname{
+.h1{
     color: white;
-    font-family: roboto;
-    position:absolute;
-    top: 80px;
-    left: 60px;
+    font-weight: bold;
+    padding: 60px 10px 20px 1px;
+    font-size: 40px;
+    
 }
-.pimg{
+.prname{
+    color: white;
+    font-family: roboto,Fantasy;
+    padding: 50px 40px 40px 70px;
+    width: 50%;
+    
 }
-.pnamepimg{
+.prname p{
+    font-style: normal;
+
+    
 }
+.primg{
+    padding-right:30px;
+    width: 50%;
+}
+.btn2{
+    padding: 7px 11px;
+    background-color: #FFB803;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s; 
+    color:black;
+    font-weight: bold;
+    margin-top: 110px; 
+    margin-left: 35px; 
+}
+.btn2:hover{
+    background-color: #FFFF;   
+}
+.buynow{
+    display: flex;
+
+}
+.price{
+    margin-top: 108px; 
+    margin-left: 10px;
+     
+}
+.price a{
+    color:red;
+    font-family: roboto,sans-serif;
+    font-weight: bold;
+    text-decoration:line-through #FF3028;
+   
+}
+.freeship{
+    display: flex;
+    padding-top: 20px;
+
+}
+.freeship img{
+    width: 30px;
+    
+}
+.freeship o{
+    font-size: 22px;
+    font-weight: bold;
+    
+    color: red;
+}
+.section2 img{
+    width: 590px;
+    
+    height: 1024px;
+   left: 847px;
+   top: 554px;
+    
+
+}
+.left{
+   display: flex ;
+   
+   
+
+}
+.h2{
+    color: black;
+    font-weight: bold;
+    padding: 40px  50px 2px;
+    font-size: 40px;
+}
+.section1{
+    margin-left: 20px;
+}
+.section1 img{
+    width: 540px;
+    
+}
+
+.section1 .warranty{
+    width: 80px;
+    
+}
+.section1 a{
+    color: #FF7E00;
+    
+}
+.warrantyandp{
+    display: flex;
+    
+    padding-top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .prname{
+        width: 100%;
+    }
+    .prname h1,.prname p{
+        text-align: center;
+    }
+  }
