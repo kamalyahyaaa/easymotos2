@@ -63,7 +63,7 @@ header{
     width: 100%;
     justify-content: space-between;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     
 }
 .h1{
@@ -78,17 +78,13 @@ header{
     font-family: roboto,Fantasy;
     padding: 50px 40px 40px 70px;
     width: 50%;
-    
 }
 .prname p{
     font-style: normal;
 
-    
 }
-.primg{
-    padding-right:30px;
-    width: 50%;
-}
+
+/* btnbuy */
 .btn2{
     padding: 7px 11px;
     background-color: #FFB803;
@@ -104,6 +100,7 @@ header{
 .btn2:hover{
     background-color: #FFFF;   
 }
+/* endbtnbuy */
 .buynow{
     display: flex;
 
@@ -135,37 +132,42 @@ header{
     
     color: red;
 }
-.section2 img{
-    width: 590px;
+/* main1 */
+.firstmain{
     
-    height: 1024px;
-   left: 847px;
-   top: 554px;
-    
-
-}
-.left{
-   display: flex ;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
    
-   
-
 }
+
 .h2{
     color: black;
     font-weight: bold;
     padding: 40px  50px 2px;
     font-size: 40px;
 }
-.section1{
-    margin-left: 20px;
+.left{
+    width: 50%;
 }
-.section1 img{
+.right{
+    width: 40%;
+}
+.section1{
+    margin-left: 40px;
+    
+}
+
+.imgprfeatures{
     width: 540px;
     
 }
 
 .section1 .warranty{
     width: 80px;
+    margin: 0px;
     
 }
 .section1 a{
@@ -174,10 +176,262 @@ header{
 }
 .warrantyandp{
     display: flex;
+    padding-right: 20px;
+    margin: 20px;
+
+}
+.imgscoter{
     
-    padding-top: 0px;
+    width: 100%;
+    height: 900px;
+   
+
+}
+.garantee{
+    margin-right:30px ;
+    margin: 35px;
+    width: 500px;
+
+}
+.secondmain{
+    
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+.h3{
+    color: black;
+    font-weight: bold;
+    padding: 4px  90px ;
+    margin-right: 33px;
+    font-size: 40px;
+}
+.section2{
+    width: 50%;
+}
+table{
+    width: 90%;
+    margin: 30px;
+    height: 800px;
+    border: 1px solid #FF7E00;
+    border-spacing: 0px;    
+}
+table td{
+    padding: 15px;
+    border: 1.33px solid #FF7E00;
+}
+.hi-slide{
+    position:relative;
+    width:754px;
+    height:292px;
+    margin:115px auto 0
+}
+.hi-slide .hi-next,
+.hi-slide .hi-prev{
+    position:absolute;
+    top:50%;
+    width:40px;
+    height:80px;
+    margin-top:-40px;
+    border-radius:5px;
+    line-height:80px;
+    text-align:center;
+    cursor:pointer;
+    background-color:#666;
+    color:#fff;opacity:.7;
+    transition:all .6s;
+    font-size:30px
+}
+.hi-slide .hi-next:hover,
+.hi-slide .hi-prev:hover{
+    opacity:1;
+    background-color:#444
+}
+.hi-slide .hi-prev{
+    left:-60px
+}
+.hi-slide .hi-prev::before{
+    content:'<'
+}
+.hi-slide .hi-next
+{right:-60px
+}
+.hi-slide .hi-next::before{
+    content:'>'
+}
+.hi-slide>ul{
+    list-style:none;
+    position:relative;
+    width:754px;
+    height:292px;
+    margin:0;
+    padding:0
+}
+.hi-slide>ul>li{
+    overflow:hidden;
+    position:absolute;
+    z-index:0;
+    left:377px; 
+    top:146px;
+    width:0;
+    height:0;
+    margin:0;
+    padding:0;
+    border:2px solid #fff;
+    border-radius:5px;
+    background-color:#333;
+    cursor:pointer
+}
+.hi-slide>ul>li>img{
+    width:100%;
+    height:100%
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    padding: 0 50px;
 }
 
+.row{
+    width: 33%;    
+}
+
+.FindUs{
+    width: 33%;
+}
+
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #222830;
+    padding: 70px 0;
+    
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+    flex-direction: row;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #04BD70;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+    
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+    flex: 1;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.paragraph{
+    color: #bbbbbb;
+}
+.paragraph p:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+.sinupbox{
+    flex-direction: row;
+    width: 33%;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(96, 235, 131, 0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #04BD70;
+	transition: all 0.5s ease;
+    flex: 1;
+    
+}
+
+.singup{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* padding: 1px;
+    background: #04BD70; */
+
+}
+
+/* label{
+    position: relative;
+} */
+input[type="text"]{
+    border: none;
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    flex: 1;
+    border: #04BD70 solid;
+}
+button{
+    
+    top: 0;
+    bottom: 0;
+    right: 0;
+    letter-spacing: 1.2px;
+    
+    background-color: #04BD70;
+    color: white;
+    padding: 13px 25px ;
+    
+    text-transform: uppercase;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    
+}
+button:hover{
+    transition: .8s;
+    background-color: #6c6c6c;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+    grid-column: flex;
+}
+.footer-copyright{
+    color: #ffffff ;
+    background-color: #24262b;
+    padding-top: 1%;
+    font-size: large;
+
+}
+.rit p{
+margin-left: 3rem;
+}
+/*responsive*/
 
 
 
@@ -187,11 +441,49 @@ header{
 
 
 
-@media only screen and (max-width: 600px) {
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+   
     .prname{
         width: 100%;
     }
     .prname h1,.prname p{
         text-align: center;
     }
+    header{
+       width: 100%;
+
+    }
+    .nav-links{
+        display: none;
+    }
+    .btn1{
+        display: none;
+    }
+
+
+
+
+
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .footer-col{
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
   }
