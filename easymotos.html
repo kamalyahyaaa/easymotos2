@@ -8,31 +8,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <title>Easymotos</title>
 </head>
 <body>
     <header>
         <img class="logo" src="./assets/EasyMotos.svg" alt="logo">
         <nav class="navbar">
-          <ul class="nav-links">
+          <ul class="nav-linkss">
                 <li> <a href="#">product</a></li>
                 <li> <a href="#">services</a></li>
                 <li>   <a href="#">about</a></li>
          </ul>
         </nav>
         <a class="contactus" href="#"><button class="btn1" >Contact us</button></a>
-        
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="nav-links">
+                <li> <a href="#">product</a></li>
+                <li> <a href="#">services</a></li>
+                <li>   <a href="#">about</a></li>
+                <li>   <a href="#">Contact us</a></li>
+              
+
+             
+            </ul>
+          </div>
     </header>
    
     <div class="parent">
         <div class="prname">
-            <h1 class="h1">DUALTRON EAGLE PRO <br> ELECTRIC SCOOTER</h1>
-            <p>The Dualtron Eagle Pro is the latest from the Dualtron Electric 
+            <div class="h1andp">
+              <h1 class="h1">DUALTRON EAGLE PRO  <br> ELECTRIC SCOOTER</h1>
+             <p>The Dualtron Eagle Pro is the latest from the Dualtron Electric 
                 Scooter range!  The 3,600 watt BLDC hub motors, folding <br>
                  handlebars, and a rear changeable suspension cartridge are <br>
                   exactly what the customers of Dualtron had been asking for. <br>
                    The Eagle Pro is a limited production model and will only be <br>
                     available while supplies last!</p>
+            </div>
             <div class="buynow">
                  <a class="" href="#"><button class="btn2">Buy It Now</button></a>
                  <h4 class="price" > <a href="">5000dh</a> <br>3500dh </h4>
@@ -44,37 +60,105 @@
             
             
         </div>
-        <div class="primg">
+           <div class="primg">
             <img src="./assets/pimg.png" alt="pimg">
-        </div>
+           </div>
     </div>
+    <!-- main -->
     <main id="main">
         <div class="firstmain">
             <div class="left">
                 
                 <div class="section1">
-                    <h1 class="h2">PRODUCT FEATURES</h1>
-                    <img src="./assets/productfeature.png" alt="">
-                    <h1 class="h2">SERVICES</h1>
+                      <h1 class="h2">PRODUCT FEATURES</h1>
+                      <img class="imgprfeatures" src="./assets/productfeature.png" alt="">
+                      <h1 class="h2">SERVICES</h1>
                     <div class="warrantyandp">
-                    <img class="warranty" src="./assets/warranty-2-year 1.png" alt="">
-                    <p>You get 2 years warranty on the main scooter frame and 1 year on other major components, supported by our fully-equipped <a href="">Service Centre</a> service centre. See full warranty details.</p>
-                    </div>
-
-
-
-                    <img src="./assets/garantee.png" alt="">
-                </div>
+                       <img class="warranty" src="./assets/warranty-2-year 1.png" alt="">
+                       <p>You get 2 years warranty on the main scooter frame and 1 year on other major components, supported by our fully-equipped <a href="">Service Centre</a> service centre. See full warranty details.</p>
                     
-                <div class="section2">
-                    <img src="./assets/BJ4A0847-683x1024.jpg" alt="">
+
+                
+                    </div>
+                    
+
+
+
+                    <img class="garantee" src="./assets/garantee.png" alt="">
+                </div>
+            </div>       
+                <div class="right">
+                    <img class="imgscoter1" src="./assets/BJ4A0847-683x1024.jpg" alt="">
 
                 </div>
-            </div>
+         
+        </div>
+        <div class="secondmain">
+            <div class="right">
+                <img class="imgscoter2" src="./assets/BJ4A1083-scaled.jpg" alt="">
 
+            </div>
+            
+            <div class="section2">
+                <h1 class="h3">PRODUCT FEATURES</h1>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Top Speed</td>
+                            <td>65km/h</td>
+                        </tr>
+                        <tr>
+                            <td>Motor</td>
+                            <td>	MAX 3,600 watt BLDC dual hub motors</td>
+                        </tr>
+                        <tr>
+                            <td>Battery</td>
+                            <td>60 volt - 22.4 Ah - 1,344Wh – LG 3500 cells</td>
+                        </tr>
+                        <tr>
+                            <td>Charge Time</td>
+                            <td>12 hours with a standard charger (6 hours with 2 standard chargers, 3 hours with the quick charger)</td>
+                        </tr>
+                        <tr>
+                            <td>Climbing Range</td>
+                            <td>	47% or 25 degrees depending on rider weight and state of charge</td>
+                        </tr>
+                        <tr>
+                            <td>Lighting</td>
+                            <td>Dual LED Headlight and Taillight, Brake Light</td>
+                        </tr>
+                        <tr>
+                            <td>Max Load</td>
+                            <td>120.2 Kg</td>
+                        </tr>
+                        <tr>
+                            <td>Scooter Weight</td>
+                            <td>29.9 Kg</td>
+                        </tr>
+                        <tr>
+                            <td>Product Material</td>
+                            <td>Aviation grade 6082-T6 aluminium alloy (frame and handle), SCM440 steel (shaft), Plastic (Covers)</td>
+                        </tr>
+                        <tr>
+                            <td>Size (L x W x H, mm)</td>
+                            <td>Unfolded: 118.5 Cm x 60 Cm x 120 Cm <br>
+                                Folded: 118.5 Cm x 60 Cm x 50.5 Cm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+
+
+            
 
 
         </div>
+
+
+
+
+
 
 
     </main>
@@ -84,21 +168,113 @@
 
 
 
+<!-- Start slider -->
+
+<div class="slider">
+
+    <div class="prev-slide">
+        <button onclick="plusSlides(-1)">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+    </div>
+
+    <div class="slides">
+        <div class="slide">
+            <img src="./assets/1.jpg" alt="Scotter img">
+        </div>
+        <div class="slide">
+            <img src="./assets/2.jpg" alt="Scotter img">
+        </div>
+        <div class="slide">
+            <img src="./assets/3.jpg" alt="Scotter img">
+        </div>
+        <div class="slide">
+            <img src="./assets/4.jpg" alt="Scotter img">
+        </div>
+        <div class="slide">
+            <img src="./assets/5.jpg" alt="Scotter img">
+        </div>
+    </div>
+
+    <div class="next-slide">
+        <button onclick="plusSlides(1)">
+            <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+
+</div>
+
+<!-- end slider -->
 
 
     <!-- footer start -->
 
     <footer>
-        
+       
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>CONTACT US</h4>
+                        <ul class="infofooter">
+                            Tele: <br>
+                            &nbsp;  &nbsp;  &nbsp;  &nbsp; 0553860710
+                            <br>
+                            Email: <br>
+                            &nbsp;  &nbsp;  &nbsp;  &nbsp;
+                            easy.motos@gmail.com
+                            
+                        </ul>
+                    </div>                
+                </div>
 
+                <div class="FindUs">
+                    <div class="footer-col">
+                        <h4>FIND US</h4>
+                        <ul class="infofooter" >
+                            Motos,Tanger <br>
+                            90000 la zone franche <br>
+                            Maroc                          
+                        </ul>
+                    </div>
+                </Div>
 
+                <div class="sinupbox">
+                    <div class="paragraph">
+                        <p>Sign me up to the newsletter to keep me in the loop on offers, competitions, new
+                            products and free demo days</p>
+                    </div>
+                    <div class="singup">
+                        <label>
+                            <input type="text" placeholder="Entre your email address"> 
+                        </label>
+                        <button>SIGN UP</button> 
 
+                   </div>
 
-
+                    <div class="footer-col">
+                        <h4>SOCIAL MEDIA:</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
+          <!--star copyright-->
+                <div class="footer-copyright">
+                                <div class="rit">
+                                <p>Copyright © 2021.Easy Motos. All right reserved.</p>
+                                </div>
+                </div>
 
 
      </footer>
       <!-- footer end-->
+      <script src="./motos1.js"></script>
     
 </body>
 
